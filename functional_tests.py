@@ -17,7 +17,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # 웹 페이지 타이틀과 헤더가 'To-Do'를 표시하고 있다.
         # assert 'To-do' in browser.title, "Brower title was " + browser.title
-        self.assertIn('To-Do', self.browser.title)
+        # self.assertIn('To-Do', self.browser.title)
         self.fail('Finish the Test!')
 
         # 사용자A는 바로 작업을 추가한다.
