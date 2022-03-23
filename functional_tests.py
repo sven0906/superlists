@@ -39,13 +39,15 @@ class NewVisitorTest(unittest.TestCase):
         # (에디스의 취미는 날치 잡이용 그물을 만드는 것이다)
         inputbox.send_keys('공작깃털 사기')
 
-        import time
-        time.sleep(3)
-
         # 엔터키를 치면 페이지가 갱신되고 작업목록에
         # "1: 공작깃털 사기" 아이템이 추가된다.
         inputbox.send_keys(Keys.ENTER)
+
+        import time
+        time.sleep(3)
         self.check_for_row_in_list_table('1: 공작깃털 사기')
+
+
 
         # check_for_row_in_list_table() 함수로 처리
         # table = self.browser.find_element_by_id('id_list_table')
@@ -61,6 +63,7 @@ class NewVisitorTest(unittest.TestCase):
         inputbox = self.browser.find_element_by_id('id_new_item')
         inputbox.send_keys('공작깃털을 이용해서 그물 만들기')
         inputbox.send_keys(Keys.ENTER)
+        time.sleep(3)
 
         # 페이지는 다시 갱신되고, 두개 아이템이 목록에 보인다.
         self.check_for_row_in_list_table('2: 공작깃털을 이용해서 그물 만들기')
