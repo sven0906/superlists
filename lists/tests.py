@@ -9,7 +9,7 @@ from lists.views import home_page
 from lists.models import Item
 
 
-class SmokeTest(TestCase):
+class HomePageTest(TestCase):
 
     # def test_bad_maths(self):
     #     self.assertEqual(1 + 1, 3)
@@ -43,14 +43,27 @@ class SmokeTest(TestCase):
         response = home_page(request)
 
         """ 어설션(Assert) """
-        self.assertIn('신규 작업 아이템', response.content.decode())
-        expected_html = self.remove_csrf(render_to_string(
-            'home.html',
-            {'new_item_text': '신규 작업 아이템'},
-            request=request
-        ))
-        response_decode = self.remove_csrf(response.content.decode())
-        self.assertEqual(response_decode, expected_html)
+        self.assertEqual(Item.objects.count(), 1)
+        new_item = Item.objects.first()
+        self.assertEqual(new_item.text, '신규 작업 아이템')
+
+        self.assertEqual(response.status_code, 302)
+        self.assertEqual(response['location'], '/')
+
+        # 더 이상 response.content가 템플릿에 의해 렌더링 되지 않음
+        # self.assertIn('신규 작업 아이템', response.content.decode())
+        # expected_html = self.remove_csrf(render_to_string(
+        #     'home.html',
+        #     {'new_item_text': '신규 작업 아이템'},
+        #     request=request
+        # ))
+        # response_decode = self.remove_csrf(response.content.decode())
+        # self.assertEqual(response_decode, expected_html)
+
+    def test_home_page_only_saves_items_when_necessary(self):
+        request = HttpRequest()
+        home_page(request)
+        self.assertEqual(Item.objects.count(), 0)
 
 
 class ItemModelTest(TestCase):
