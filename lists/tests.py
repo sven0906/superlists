@@ -1,5 +1,6 @@
 import re
 import sys
+import json
 from django.http import HttpRequest
 from django.test import TestCase
 from django.shortcuts import render
@@ -27,13 +28,6 @@ class HomePageTest(TestCase):
         expected_html = self.remove_csrf(render_to_string('home.html', request=request))
         response_decode = self.remove_csrf(response.content.decode())
         self.assertEqual(response_decode, expected_html)
-
-
-
-    def test_home_page_only_saves_items_when_necessary(self):
-        request = HttpRequest()
-        home_page(request)
-        self.assertEqual(Item.objects.count(), 0)
 
 
 class ItemModelTest(TestCase):
@@ -74,7 +68,7 @@ class ListViewTest(TestCase):
     def test_saving_a_POST_request(self):
         self.client.post(
             '/lists/new',
-            data={'item_text': '신규 작업 아이템'}
+            data={'item_text': '신규 작업 아이템'},
         )
 
         """ 어설션(Assert) """
@@ -85,8 +79,16 @@ class ListViewTest(TestCase):
     def test_redirects_after_POST(self):
         response = self.client.post(
             '/lists/new',
-            data={'item_text', '신규 작업 아이템'}
+            data={'item_text': '신규 작업 아이템'},
         )
-
-        self.assertEqual(response.status_code, 302)
-        self.assertEqual(response['location'], '/lists/the-only-list-in-the-world/')
+        self.assertRedirects(response, '/lists/the-only-list-in-the-world/')
+        # """ 설정(Setup) """
+        # request = HttpRequest()
+        # request.method = 'POST'
+        # request.POST['item_text'] = '신규 작업 아이템'
+        #
+        # """ 처리(Exercise) """
+        # response = home_page(request)
+        #
+        # self.assertEqual(response.status_code, 302)
+        # self.assertEqual(response['location'], '/lists/the-only-list-in-the-world/')
