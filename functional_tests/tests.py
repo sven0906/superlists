@@ -1,10 +1,12 @@
 from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import unittest
 
 
-class NewVisitorTest(LiveServerTestCase):
+# class NewVisitorTest(LiveServerTestCase):
+class NewVisitorTest(StaticLiveServerTestCase):
 
     def setUp(self) -> None:
         self.browser = webdriver.Firefox()
@@ -19,6 +21,7 @@ class NewVisitorTest(LiveServerTestCase):
         self.assertIn(row_text, [row.text for row in rows])
 
     def test_can_start_a_list_and_retrieve_it_later(self):
+        import time
         # 사용자A가 웹 사이트에 접속한다.
         self.browser.get(self.live_server_url)
 
@@ -44,7 +47,7 @@ class NewVisitorTest(LiveServerTestCase):
         # "1: 공작깃털 사기" 아이템이 추가된다.
         inputbox.send_keys(Keys.ENTER)
 
-        import time
+
         time.sleep(3)
 
         edith_list_url = self.browser.current_url
