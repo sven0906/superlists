@@ -1,6 +1,6 @@
 from unittest import skip
 from .base import FunctionalTest
-
+import time
 
 class ItemValidationTest(FunctionalTest):
     def test_cannot_add_empty_list_items(self):
@@ -8,7 +8,8 @@ class ItemValidationTest(FunctionalTest):
         # 입력 상자가 비어 있는 상태에서 엔터키를 누른다.
         self.browser.get(self.live_server_url)
         self.browser.find_element_by_id('id_new_item').send_keys('\n')
-        
+
+        time.sleep(3)
         # 페이지가 새로고침되고, 빈 아이템을 등록할 수 없다는 에러 메시지가 표시된다.
         error = self.browser.find_element_by_css_selector('.has-error')
         self.assertEqual(error.text, '빈 아이템을 등록할 수 없습니다.')
