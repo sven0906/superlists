@@ -127,7 +127,7 @@ class ListViewTest(TestCase):
         )
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'list.html')
-        expected_error = escape("You can't have an empty list item")
+        expected_error = escape("빈 아이템을 등록할 수 없습니다.")
         self.assertContains(response, expected_error)
 
 
@@ -136,5 +136,5 @@ class NewListTest(TestCase):
         response = self.client.post('/lists/new', data={'item_text': ''})
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'home.html')
-        expected_error = escape("You can't have an empty list item")
+        expected_error = escape("빈 아이템을 등록할 수 없습니다.")
         self.assertContains(response, expected_error)

@@ -2046,3 +2046,136 @@ console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message f
 
 ###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
 
+1651909204663	geckodriver	INFO	Listening on 127.0.0.1:57740
+1651909207762	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57741" "-no-remote" "-profile" "C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileKQRPp1"
+1651909208211	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileKQRPp1\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57741/devtools/browser/a50f58ba-1450-42c0-8628-50a83df8f36c
+1651909210641	Marionette	INFO	Listening on port 57747
+1651909210964	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1651909215252	Marionette	INFO	Stopped listening on port 57747
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1651909216223	geckodriver	INFO	Listening on 127.0.0.1:57795
+1651909219288	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57796" "-no-remote" "-profile" "C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileqxhhGH"
+1651909219684	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileqxhhGH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57796/devtools/browser/f560ce97-ed6a-4754-bbce-67bc1658e2c4
+1651909221962	Marionette	INFO	Listening on port 57802
+1651909222481	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:57794"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:57794"
+1651909232066	Marionette	INFO	Stopped listening on port 57802
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1651909232772	geckodriver	INFO	Listening on 127.0.0.1:57856
+1651909235792	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57857" "-no-remote" "-profile" "C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileIRyG4q"
+1651909236214	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileIRyG4q\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57857/devtools/browser/6d9f50b9-1ea5-4b10-aa8a-92bb8cf058c0
+1651909238778	Marionette	INFO	Listening on port 57864
+1651909238988	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:57794"
+1651909242232	Marionette	INFO	Stopped listening on port 57864
+[Parent 14008, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1651909273360	geckodriver	INFO	Listening on 127.0.0.1:57931
+1651909276387	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57932" "-no-remote" "-profile" "C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileM4zAfF"
+1651909276789	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileM4zAfF\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57932/devtools/browser/12f936bf-f971-442a-96b8-02fb8b149463
+1651909279203	Marionette	INFO	Listening on port 57941
+1651909279580	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1651909283916	Marionette	INFO	Stopped listening on port 57941
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1651909284861	geckodriver	INFO	Listening on 127.0.0.1:57987
+1651909287919	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57988" "-no-remote" "-profile" "C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofilePbBvwz"
+1651909288318	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofilePbBvwz\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57988/devtools/browser/edb88949-ec62-4f8a-b0f6-aa218afdacb5
+1651909290609	Marionette	INFO	Listening on port 57994
+1651909291110	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:57986"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:57986"
+1651909300562	Marionette	INFO	Stopped listening on port 57994
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1651909301232	geckodriver	INFO	Listening on 127.0.0.1:58040
+1651909304282	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58041" "-no-remote" "-profile" "C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofilewn0czN"
+1651909304667	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofilewn0czN\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58041/devtools/browser/eb5f9aa0-e89b-4891-8c71-8a3312cc56b0
+1651909307013	Marionette	INFO	Listening on port 58047
+1651909307475	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:57986"
+1651909310786	Marionette	INFO	Stopped listening on port 58047
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1652153883649	geckodriver	INFO	Listening on 127.0.0.1:51582
+1652153886760	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51583" "-no-remote" "-profile" "C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofilekVRj90"
+1652153887849	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofilekVRj90\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51583/devtools/browser/4e28cd8e-a0bf-4731-8037-905892d53cf8
+1652153890909	Marionette	INFO	Listening on port 51590
+1652153891010	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1652153895482	Marionette	INFO	Stopped listening on port 51590
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1652153896318	geckodriver	INFO	Listening on 127.0.0.1:51642
+1652153899407	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51643" "-no-remote" "-profile" "C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileYZPh6j"
+1652153899844	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofileYZPh6j\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51643/devtools/browser/97201441-5a3d-4849-a005-9ceef6d87ce7
+1652153902115	Marionette	INFO	Listening on port 51649
+1652153902609	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:51641"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:51641"
+1652153912273	Marionette	INFO	Stopped listening on port 51649
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1652153912988	geckodriver	INFO	Listening on 127.0.0.1:51702
+1652153916086	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51703" "-no-remote" "-profile" "C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofile8rNavy"
+1652153916466	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sven\\AppData\\Local\\Temp\\rust_mozprofile8rNavy\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51703/devtools/browser/135b0077-71c3-438e-9da5-0354dafd4f0a
+1652153918816	Marionette	INFO	Listening on port 51710
+1652153919282	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://localhost:51641"
+1652153922662	Marionette	INFO	Stopped listening on port 51710

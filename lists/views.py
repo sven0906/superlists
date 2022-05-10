@@ -18,7 +18,7 @@ def view_list(request, id):
             # return redirect('/lists/%d/' % (list_.id,))
             return redirect(list_)
         except ValidationError:
-            error = "You can't have an empty list item"
+            error = "빈 아이템을 등록할 수 없습니다."
     return render(request, 'list.html', {'list': list_, 'error': error})
 
 
@@ -30,7 +30,7 @@ def new_list(request):
         item.save()
     except ValidationError:
         list_.delete()
-        error = "You can't have an empty list item"
+        error = "빈 아이템을 등록할 수 없습니다."
         return render(request, 'home.html', {"error": error})
     # return redirect('/lists/%d/' % (list_.id,))
     # return redirect('view_list', list_.id)
