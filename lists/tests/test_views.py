@@ -10,25 +10,18 @@ from django.urls import reverse
 from django.template.loader import render_to_string
 from lists.views import home_page
 from lists.models import Item, List
+from lists.forms import ItemForm
 
 
 class HomePageTest(TestCase):
 
-    def remove_csrf(self, origin):
-        csrf_regex = r'<input[^>]+csrfmiddlewaretoken[^>]+>'
-        return re.sub(csrf_regex, '', origin)
+    def test_home_page_renders_home_template(self):
+        response = self.client.get('/')
+        self.assertTemplateUsed(response, 'home.html')
 
-    # def test_root_url_resolves_to_home_page_view(self):
-    #     found = reverse('/')
-    #     self.assertEqual(found.func, home_page)
-
-    def test_home_page_returns_correct_html(self):
-        request = HttpRequest()  # HttpRequest 객체를 생성한다.
-        response = home_page(request)  # home_page 뷰에 전달해서 응답을 가져온다.
-
-        expected_html = self.remove_csrf(render_to_string('home.html', request=request))
-        response_decode = self.remove_csrf(response.content.decode())
-        self.assertEqual(response_decode, expected_html)
+    def test_home_page_uses_item_form(self):
+        response = self.client.get('/')
+        self.assertIsInstance(response.context['form'], ItemForm)
 
 
 class ListViewTest(TestCase):
