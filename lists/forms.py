@@ -1,7 +1,7 @@
 from django import forms
 from .models import Item
 
-EMPTY_LIST_ERROR = '빈 아이템을 등록할 수 없습니다.'
+EMPTY_LIST_ERROR = "You can't have an empty list item"
 # class ItemForm(forms.Form):
 #     item_text = forms.CharField(
 #         widget=forms.fields.TextInput(attrs={
